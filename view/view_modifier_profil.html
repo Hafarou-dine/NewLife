@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <link rel="stylesheet" href="./asset/css/profil.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Modifier mon profil</h2>
+        <!-- Pas le mot de passe -->
+        <form action="" method="post">
+            <div class="form-label"><label for="name">Nom :</label></div>
+            <div class="form-input"><input type="text" name="nom_util" id="name" placeholder="Nom d'utilisateur" required></div>
+            
+            <div class="form-label"><label for="email">E-mail :</label></div>
+            <div class="form-input"> <input type="email" name="email_util" id="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></div>
+                
+            <div id="boutons">
+                <button class="form-button" type="submit" name="update">Sauvegarder</button>
+                <button class="form-button" type="submit" name="delete">Supprimer</button>
+            </div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>

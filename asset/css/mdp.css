@@ -1,0 +1,54 @@
+@import "./index.css";
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    margin: 10px 0px;
+    width: 20rem;
+}
+
+button{
+    margin-top: 15px;
+    width: 10rem;
+    margin: 8px;
+}
+
+i{
+    cursor: pointer;
+    margin-left: -8%;
+}
+
+#message{
+    margin: 10px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 590px){
+    input, #message{
+        width: 200px;
+    }
+
+    button{
+        width: 100px;
+    }
+
+    i{
+        margin-left: -13%;
+    }
+}

@@ -1,0 +1,117 @@
+@import "./index.css";
+
+/* alignement horizontal des élements du container */
+#container{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* alignemnt vertical des éléments dans les deux formulaires  */
+#inscription, #connexion{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 550px;
+    margin: 0% auto;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.mot{   
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input{
+    margin: 10px 0px;
+    width: 500px;
+}
+
+button{
+    margin-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+hr{
+    height: 334px;
+}
+
+.form-button{
+    margin-left: 32.5%;
+}
+
+i{
+    margin-left: -35px; 
+    cursor: pointer;
+}
+
+#message{
+    margin: 2%;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+/* sur les ecrans de largeur inférieur à 1080px */
+@media screen and (max-width: 1080px){
+    #container{
+        flex-direction: column;
+    }
+
+    #inscription, #connexion{
+        align-items: center;
+    }
+
+    #inscription{
+        margin-bottom: -200px;
+    }
+
+    #connexion{
+        margin-bottom: 20px;
+    }
+
+    hr{
+        visibility: hidden;
+    }
+
+    i{
+        margin-left: -6%;
+    }
+}
+
+
+/* sur les ecrans de largeur inférieur à 575px */
+@media screen and (max-width: 575px){
+    #inscription, #connexion{
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    input, #message{
+        width: 200px;
+    }
+    
+    button{
+        width: 70%;
+    }
+
+    .form-button{
+        margin-left: 15%;
+    }
+
+    i{
+        margin-left: -15%;
+    }
+}

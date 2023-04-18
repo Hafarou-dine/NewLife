@@ -1,0 +1,85 @@
+@import "./index.css";
+
+h2{
+    text-align: center;
+}
+
+.visuel{
+    display: flex;
+    flex-direction: row;
+    margin: 2% 2% 3%;
+    height: 15%;
+}
+
+.text{
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 6px -6px #555;
+    /* background-color: white; */
+    background-color: rgb(185 185 185 /50%);
+    padding: 15px;
+    width: 80%;
+    margin-right: 10%;
+}
+
+.text:hover{
+    box-shadow: none;
+}
+
+.boutons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+}
+
+.first{
+    margin-bottom: 20%;
+}
+
+.icon{
+    text-decoration: none;
+    margin: 20%;
+    border: none;
+    border-radius: 5px;
+    width: 300%;
+    background-color: rgb(6, 83, 151);
+    box-shadow: 4px 8px 8px -6px rgb(2, 1, 59);
+    text-align: center;
+}
+
+.icon:hover{
+    box-shadow: none;
+    background-color: rgb(255, 60, 0);
+}
+
+.titre{
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 1%;
+}
+
+.prix{
+    margin: 3% 0 1%;
+}
+
+.vendu{
+    margin: 2% 0 0;
+}
+
+@media screen and (max-width : 500px) {
+    #container{
+        margin-top: -15%;
+    }
+
+    .visuel{
+        flex-direction: column;
+    }
+
+    .text{
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 25%;
+    }
+}

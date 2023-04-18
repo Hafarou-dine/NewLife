@@ -1,0 +1,77 @@
+@import './index.css';
+
+footer{
+    margin-top: auto;
+    background-color: #929090;
+    box-shadow: 2px -3px 3px -2px rgb(67, 67, 68);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    padding: 0 60px;
+}
+
+footer:hover{
+    box-shadow: none;
+}
+
+#infos{
+    margin: 0 0 6%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.section-title{
+    text-transform: uppercase;
+    font-size: large;
+}
+
+.section-hr{
+    border: 1px solid black;
+    height: 2px;
+    margin: -20px 0 1px;
+    visibility: visible;
+}
+
+.section-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+
+}
+
+#social{
+    border: 1px solid black;
+    height: 2px;
+    margin: 0 0 25px;
+    visibility: visible;
+}
+
+#logo-copy, #follow{
+    text-align: center;
+    margin: 1% 0;
+}
+
+#social-medias{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+}
+
+@media screen and (max-width: 400px) {
+    footer{
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    #social, .section-hr{
+        width: 100%;
+    }
+}

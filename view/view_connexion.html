@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <!-- lien cdn pour les icons font-awesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- fichier css -->
+    <link rel="stylesheet" href="./asset/css/connexion.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="inscription">
+            <h2>S'inscrire</h2>
+            <div class="mot">Bienvenue</div>
+            <form action="" method="post">
+                <div>
+                    <input type="text" name="nom_user" id="name" 
+                    placeholder="Nom d'utilisateur" 
+                    required>
+                </div>
+
+                <div>
+                    <input type="email" name="email_user" id="email" 
+                    placeholder="E-mail" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                    required>
+                </div>
+                <div>
+                    <input type="password" name="mdp_user" id="psw" 
+                    placeholder="Mot de passe" 
+                    pattern="(?=.*\d)(?=.*[a-z0-9])(?=.*[A-Z]).{6,}" 
+                    minlength="10" 
+                    maxlength="20" 
+                    required>
+                    <!-- icone oiel -->
+                    <i class="far fa-eye" id="eye-icon-inscrire"></i>
+                </div>
+                <div>
+                    <input type="password" name="confirm_mdp_user" id="check" 
+                    placeholder="Confirmer le mot de passe" 
+                    pattern="(?=.*\d)(?=.*[a-z0-9])(?=.*[A-Z]).{6,}" 
+                    minlength="10" 
+                    maxlength="20" 
+                    required>
+                    <!-- icone oiel -->
+                    <i class="far fa-eye" id="eye-icon-confirm"></i>
+                </div>
+
+                <div class="form-button">
+                    <button type="submit" name="create">S'inscrire</button>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <div id="connexion">
+            <h2>Se connecter</h2>
+            <div class="mot">Bonjour</div>
+            <form action="" method="post">
+                <div>
+                    <input type="email" name="email_util" id="login" placeholder="E-mail" 
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                    required>
+                </div>
+                <div>
+                    <input type="password" name="mdp_util" id="password" placeholder="Mot de passe" 
+                    pattern="(?=.*\d)(?=.*[a-z0-9])(?=.*[A-Z]).{6,}" 
+                    minlength="10" 
+                    maxlength="20" 
+                    required>
+
+                    <!-- icone oiel -->
+                    <i class="far fa-eye" id="eye-icon-connexion"></i>
+
+                </div>
+                <div><a href="/newlife/authentification">Mot de passe oublier ?</a></div>
+
+                <div class="form-button">
+                    <button type="submit" name="connect">Se connecter</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="message"></div>
+
+    <script src="./asset/js/connexion.js"></script>
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>
+

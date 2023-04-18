@@ -1,0 +1,56 @@
+@import "./index.css";
+
+:root {
+    --cardWidth: 300px;
+    --cardHeight: 300px;
+    --cardMargin: 20px;
+    }
+
+/* body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+} */
+    
+#container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.text{
+    margin-top: 50%;
+}
+
+.titre{
+    font-weight: bold;
+}
+
+.text:nth-child(2) p{
+    margin-top: -5%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+    .card{
+        width: 70%;
+        height: 15%;
+    }    
+}

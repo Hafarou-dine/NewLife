@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <!-- lien cdn pour les icons font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="./asset/css/mdp.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Réinitialiser mot de passe</h2>
+        <form action="" method="post">
+            <div>
+                <input type="password" name="new_pwd" id="pwd" placeholder="Nouveau mot de passe" pattern="(?=.*\d)(?=.*[a-z0-9])(?=.*[A-Z]).{6,}" required>
+                <i class="far fa-eye" id="eye-icon-new-psw"></i>
+            </div>
+            <div>
+                <input type="password" name="confirm_new_pwd" id="check" placeholder="Confirmer mot de passe" pattern="(?=.*\d)(?=.*[a-z0-9])(?=.*[A-Z]).{6,}" required>
+                <i class="far fa-eye" id="eye-icon-check"></i>
+            </div>
+            <div><button type="submit" name="change">Valider</button></div>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="./asset/js/mdp.js"></script>
+    <script src="./asset/js/index.js"></script>
+</body>
+</html>
+

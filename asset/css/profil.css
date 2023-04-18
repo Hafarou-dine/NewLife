@@ -1,0 +1,63 @@
+@import "./index.css";
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    margin-bottom: -10px;
+}
+
+.form-input{
+    margin-bottom: 4px;
+}
+
+input{
+    margin: 10px 0px;
+    width: 30rem;
+}
+
+#boutons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button{
+    margin: 5px;
+    width: 8rem;
+}
+
+button:hover {
+    letter-spacing: 2px;
+    box-shadow: none;
+}
+
+#message{
+    margin: 20px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    input, #message{
+        width: 200px;
+    }
+
+    #boutons{
+        flex-direction: column;
+        align-items: center;
+    }
+}

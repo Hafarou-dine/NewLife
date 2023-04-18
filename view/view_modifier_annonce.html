@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet</title>
+    <link rel="stylesheet" href="./asset/css/annonce.css">
+</head>
+<body>
+    <div id="container">
+        <h2>Modifier annonce</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-label form-label-input"><label for="title">Titre :</label></div>
+            <div class="form-field"><input type="text" name="titre_ann" id="title" placeholder="Titre" required></div>
+
+            <div class="form-label"><label for="desc">Déscription :</label></div>
+            <div class="form-field"><textarea name="desc_ann" id="desc" cols="50" rows="6" placeholder="Déscription" required></textarea></div>
+            
+            <div class="form-label form-label-input"><label for="price">Prix :</label></div>
+            <div class="form-field"><input type="text" name="prix_ann" id="price" placeholder="Prix"  pattern="[0-9]+[\.]?[0-9]*" required></div>
+            
+            <!-- Ne pas oublier la date dans le code php  -->
+
+            <div class="form-field">
+                <label for="category">Catégorie :</label>
+                <select name="cat" id="category">
+                    <option value="default">Aucune</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="location">Localisation :</label>
+                <select name="dep" id="location">
+                    <option value="default">Aucune</option>
+                </select>
+            </div>
+            
+            <div class="form-field">
+                <label for="marketable">Négociable :</label>
+                <input type="checkbox" name="negociable" id="marketable">
+            </div>
+
+            <div class="form-field">
+                <label for="delivery">Livraison :</label>
+                <input type="checkbox" name="livraison" id="delivery">
+            </div>
+
+            <div class="form-field">
+                <label for="sold">Vendue :</label>
+                <input type="checkbox" name="vendue" id="sold">
+            </div>
+            
+            <div class="form-field">
+                <label for="img">Images :</label>
+                <input type="file" name="image[]" id="img" multiple 
+                accept="image/png, image/jpeg, image/jpg">
+            </div>
+            
+            <div id="form-bouton"><button type="submit" name="update">Sauvegarder</button></div>
+        </form>
+        <div id="message"></div>
+    </div>
+
+    <script src="./asset/js/index.js"></script>
+    <script src="./asset/js/annonce.js"></script>
+</body>
+</html>
